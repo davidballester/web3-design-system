@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "react/jsx-max-props-per-line": "disable"
+  }
+}
