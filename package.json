@@ -9,6 +9,7 @@
     "test": "jest -u --coverage",
     "test:ci": "jest -u --coverage --ci --runInBand --reporters=\"default\" --reporters=\"jest-junit\"",
     "lint": "eslint ./src/**/*.js[x]",
+    "lint:ci": "eslint ./src/**/*.js[x] --format junit",
     "lint:fix": "eslint --fix ./src/**/*.js[x]"
   },
   "author": "Decentralized Design Lab",
