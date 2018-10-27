@@ -6,7 +6,7 @@
   "module": "dist/index.es.js",
   "scripts": {
     "build": "rollup -c",
-    "test": "jest -u",
+    "test": "jest -u --coverage",
     "lint": "eslint ./src/**/*.js[x]",
     "lint:fix": "eslint --fix ./src/**/*.js[x]"
   },

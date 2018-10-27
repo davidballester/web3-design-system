@@ -6,6 +6,8 @@ build
 
 # Jest
 __snapshots__
+coverage
+junit.xml
 
 # IDE
 .vscode
