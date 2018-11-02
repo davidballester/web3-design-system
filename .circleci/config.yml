@@ -40,15 +40,26 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       - run:
-          name: Run tests
-          command: JEST_JUNIT_OUTPUT=~/reports/jest/results.xml npm run test:ci
+          name: Install Codecov dependencies
+          command: npm install --save-dev codecov
 
       - run:
           name: Run linter
           command: npm run lint:ci -- --output-file ~/reports/eslint/results.xml
+
+      - run:
+          name: Run tests
+          command: JEST_JUNIT_OUTPUT=~/reports/jest/results.xml npm run test:ci
+
+      - run:
+          name: Report to codecov.io
+          command: ./node_modules/codecov/bin/codecov
 
       - store_test_results:
           path: ~/reports
 
       - store_artifacts:
           path: ~/reports
+
+      - store_artifacts:
+          path: coverage

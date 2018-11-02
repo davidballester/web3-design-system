@@ -7,7 +7,7 @@
   "scripts": {
     "build": "rollup -c",
     "test": "jest -u --coverage",
-    "test:ci": "jest -u --coverage --ci --runInBand --reporters=\"default\" --reporters=\"jest-junit\"",
+    "test:ci": "jest -u --ci --runInBand --reporters=\"default\" --reporters=\"jest-junit\" --coverage --coverageReporters=\"lcov\"",
     "lint": "eslint ./src/**/*.js[x]",
     "lint:ci": "eslint ./src/**/*.js[x] --format junit",
     "lint:fix": "eslint --fix ./src/**/*.js[x]"
