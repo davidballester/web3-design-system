@@ -7,6 +7,7 @@
 <div align="center">
 
   [![CircleCI](https://circleci.com/gh/davidballester/web3-design-system/tree/master.svg?style=svg)](https://circleci.com/gh/davidballester/web3-design-system/tree/master)
+  [![codecov](https://codecov.io/gh/davidballester/web3-design-system/branch/master/graph/badge.svg)](https://codecov.io/gh/davidballester/web3-design-system)
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 </div>
